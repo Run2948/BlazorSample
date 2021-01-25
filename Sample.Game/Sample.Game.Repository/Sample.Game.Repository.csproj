@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Game.Contracts\Sample.Game.Contracts.csproj" />
+    <ProjectReference Include="..\Sample.Game.Entities\Sample.Game.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

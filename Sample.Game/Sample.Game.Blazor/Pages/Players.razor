@@ -1,0 +1,24 @@
+﻿@using Sample.Game.Blazor.Components
+@page "/players"
+
+<h3>Players</h3>
+
+<div class="row">
+    <div class="col-md-10">
+        @*搜索和排序*@
+    </div>
+    <div class="col-md-2">
+        <a class="btn btn-primary" href="">新增</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @*商品列表*@
+        <PlayerTable Players="PlayerList"></PlayerTable>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @*分页控制*@
+    </div>
+</div>

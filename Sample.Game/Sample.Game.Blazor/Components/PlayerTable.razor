@@ -1,0 +1,39 @@
+﻿@if (Players.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">账号</th>
+                <th scope="col">账号类型</th>
+                <th scope="col">创建时间</th>
+                <th scope="col">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Players)
+            {
+                <tr>
+                    <td class="align-middle">
+                        @player.Account
+                    </td>
+                    <td class="align-middle">
+                        @player.AccountType
+                    </td>
+                    <td class="align-middle">
+                        @player.DateCreated.ToString("yyyy-MM-dd HH:mm:ss")
+                    </td>
+                    <td class="align-middle">
+                        <button type="button" class="btn btn-info">修改</button>
+                        <button type="button" class="btn btn-danger">删除</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <span>
+        加载中...
+    </span>
+}
